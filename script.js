@@ -24,4 +24,11 @@ function firstOrLastLonger(firstName, lastName) {
 }
 
 //write a function isEmpty(array) that returns whether a given array is empty or not
+function isEmpty(array) {
+  if (array.length == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 // Is an empty array truthy or falsy? write a conditional to find outer
