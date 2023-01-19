@@ -32,3 +32,12 @@ function isEmpty(array) {
   }
 }
 // Is an empty array truthy or falsy? write a conditional to find outer
+function isEmptyArrayFalsy(arr) {
+  if (arr == false) {
+    console.log("yeah");
+  } else if (arr == true) {
+    console.log("no it's truthy");
+  } else {
+    console.log("wut");
+  }
+}
