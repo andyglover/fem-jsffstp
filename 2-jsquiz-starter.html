@@ -122,11 +122,17 @@
         for (let i = 0; i < optionButtons.length; i++) {
           disable(optionButtons[i]);
         }
+
+        // TODO 8: Within the event handler function,
+        // Get the guessed value from the clicked button
+        // Use a conditional to compare the guess to the fact's answer
+        // and add the "correct"/"incorrect" class as appropriate
+        if (isCorrect(e.target.innerText)) {
+          e.target.classList.add("correct");
+        } else {
+          e.target.classList.add("incorrect");
+        }
       });
     }
-    // TODO 8: Within the event handler function,
-    // Get the guessed value from the clicked button
-    // Use a conditional to compare the guess to the fact's answer
-    // and add the "correct"/"incorrect" class as appropriate
   </script>
 </html>
