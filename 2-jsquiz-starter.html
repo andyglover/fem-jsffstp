@@ -116,12 +116,14 @@
     for (let optionButton of optionButtons) {
       optionButton.addEventListener("click", (e) => {
         explanation.innerText = fact.explanation;
+
+        // TODO 7: Within the event handler function,
+        // Use a for loop to disable all the option buttons
+        for (let i = 0; i < optionButtons.length; i++) {
+          disable(optionButtons[i]);
+        }
       });
     }
-
-    // TODO 7: Within the event handler function,
-    // Use a for loop to disable all the option buttons
-
     // TODO 8: Within the event handler function,
     // Get the guessed value from the clicked button
     // Use a conditional to compare the guess to the fact's answer
