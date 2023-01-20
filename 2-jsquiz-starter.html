@@ -113,7 +113,7 @@
 
     // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
     // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
-    for (optionButton of optionButtons) {
+    for (let optionButton of optionButtons) {
       optionButton.addEventListener("click", (e) => {
         explanation.innerText = fact.explanation;
       });
