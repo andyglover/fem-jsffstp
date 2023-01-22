@@ -50,4 +50,7 @@ const spices = [
   { name: "Mel C", nickname: "Sporty" },
   { name: "Victoria", nickname: "Posh" },
 ];
-const nicknames = spices.map((s) => s.nickname + " Spice");
+// const nicknames = spices.map((s) => s.nickname + " Spice");
+const names = spices.map((s) => s.name);
+const mels = spices.filter((s) => s.name.includes("Mel"));
+const endInY = spices.filter((s) => s.nickname.endsWith("y"));
