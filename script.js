@@ -41,3 +41,13 @@ function isEmptyArrayFalsy(arr) {
     console.log("wut");
   }
 }
+
+//spice girls array
+const spices = [
+  { name: "Emma", nickname: "Baby" },
+  { name: "Geri", nickname: "Ginger" },
+  { name: "Mel B", nickname: "Scary" },
+  { name: "Mel C", nickname: "Sporty" },
+  { name: "Victoria", nickname: "Posh" },
+];
+const nicknames = spices.map((s) => s.nickname + " Spice");
